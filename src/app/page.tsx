@@ -13,7 +13,7 @@ export default function Home() {
         <div className={styles.center}>
           <h2> 
             <Link href="/TylerChenowethResumeOct2023.pdf">
-            Link: My Resume
+            <a>Link: My Resume</a>
             </Link>
           </h2>
         </div>
