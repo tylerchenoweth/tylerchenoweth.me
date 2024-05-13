@@ -1,16 +1,26 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Tyler's Resume</h1>
-      <embed 
-        src="./TylerChenowethResumeOct2023.pdf" 
-        type="application/pdf" 
-        width="100%" 
-        height="700px" 
-      />
+      <div className={styles.description}>
+        <div className={styles.center}>
+          <h1>Tyler's Resume</h1>
+        </div>
+        <div className={styles.center}>
+          <h2> 
+            <Link href="/TylerChenowethResumeOct2023.pdf">
+            Link: My Resume
+            </Link>
+          </h2>
+        </div>
+        <div className={styles.center}>
+          <p>Wesbite under construction</p>
+        </div>
+      </div>
     </main>
   );
 }
