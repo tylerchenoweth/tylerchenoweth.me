@@ -5,19 +5,19 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main >
       <div className={styles.description}>
-        <div className={styles.center}>
+        <div className={styles.basicDiv}>
           <h1>Tyler's Resume</h1>
         </div>
-        <div className={styles.center}>
+        <div className={styles.basicDiv}>
           <h2> 
             <Link href="/TylerChenowethResumeOct2023.pdf">
-            <a>Link: My Resume</a>
+            My Resume 
             </Link>
           </h2>
         </div>
-        <div className={styles.center}>
+        <div className={styles.basicDiv}>
           <p>Wesbite under construction</p>
         </div>
       </div>
