@@ -228,3 +228,10 @@
     transform: rotate(0deg);
   }
 }
+
+.myMain {
+  background-color:blue;
+}
+.basicDiv {
+  text-align: center;
+}
