@@ -20,7 +20,7 @@ export default function Home() {
       <div className={styles.basicDiv}>
         <h2> 
         My Resume:&nbsp;
-          <Link href="/TylerChenowethResumeOct2023.pdf">
+          <Link href="/TylerChenowethResumeMay2024.pdf">
              Click Here!
           </Link>
         </h2>
