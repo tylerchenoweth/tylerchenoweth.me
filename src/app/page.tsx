@@ -21,7 +21,7 @@ export default function Home() {
           </Link>
         </h2>
         <br/><br/><br/><br/><br/>
-        <img src="/ChevyColoradoRendered.avif"></img>
+        <img src="/Train.webp"></img>
       </div>
     </main>
   );
