@@ -20,6 +20,8 @@ export default function Home() {
              Click Here!
           </Link>
         </h2>
+        <br/><br/><br/><br/><br/>
+        <img src="/ChevyColoradoRendered.avif"></img>
       </div>
     </main>
   );
