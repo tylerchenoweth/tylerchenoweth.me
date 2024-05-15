@@ -21,7 +21,7 @@ export default function Home() {
           </Link>
         </h2>
         <br/><br/><br/><br/><br/>
-        <img src="/Train.webp"></img>
+        <img src="/TrainBridge.webp"></img>
       </div>
     </main>
   );
