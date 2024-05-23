@@ -1,28 +1,67 @@
 import Image from "next/image";
+import Link from 'next/link'
+
 import styles from "./page.module.css";
 
-import Link from 'next/link';
+import Skills from "./skills";
+import About from "./about";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.basicDiv}>
-        <h1>Hi, I am Tyler Chenoweth</h1>
-        <p>
-          I am currently building this website using Next.js to show my resume and portfolio.
-        </p>
-        <p>
-          In the meantime you can find my resume by clicking the link below.
-        </p>
-        <h2> 
-        My Resume:&nbsp;
-          <Link href="/TylerChenowethResumeMay2024.pdf">
-             Click Here!
-          </Link>
-        </h2>
-        <br/><br/><br/><br/><br/>
-        <img src="/TrainBridge.webp"></img>
-      </div>
-    </main>
+
+    
+    // This basically works
+    <div>
+      
+   
+      <main>
+        <h1>Home</h1>
+        <p>Hi, I'm Tyler</p>
+      </main>
+      <hr></hr>
+      <About/>
+      <hr></hr>
+      <Skills/>
+      <hr></hr>
+      
+      
+
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <section id="first-section">SECTION 1</section>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+      <main id="second-section">SECTION 2</main>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      
+      <p>hey! down here!</p>
+      <br></br><br></br><br></br><br></br>
+    </div>
   );
 }
