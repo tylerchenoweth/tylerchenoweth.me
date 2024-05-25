@@ -1,0 +1,25 @@
+
+.skillsSection {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.skillsSection div {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    width:100%;
+    
+}
+
+.skillsSection div ul {
+    list-style-type: none;
+}

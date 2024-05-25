@@ -1,13 +1,14 @@
 import Image from "next/image";
-import Link from 'next/link'
+import Link from 'next/link';
 
-import styles from "./about.module.css";
+import styles from "./About.module.css";
+
 
 export default function About() {
     return (
-        <div id="about" className={styles.me}>
+        <section className={styles.aboutCard} >
             <div className={styles.imgDiv}>
-                <Image src="/CooperFox.PNG"  alt="Logo" width={300} height={300}/>
+                <Image src="/CooperFox.PNG" alt="Logo" width={300} height={300}/>
             </div>
             <div className={styles.detailsDiv}>
                 <div className={styles.detailsInnerDiv}>
@@ -21,6 +22,6 @@ export default function About() {
                 </div>
             </div>
             
-        </div>
+        </section>
     )
 }

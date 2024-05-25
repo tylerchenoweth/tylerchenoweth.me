@@ -21,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <br></br>
         <Navbar/>
         {/* <p>This is the layout.tsx file and were 
           importing the Navbar from /components</p> */}

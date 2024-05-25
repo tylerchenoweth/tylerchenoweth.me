@@ -3,20 +3,20 @@ import Link from 'next/link'
 
 import styles from "./page.module.css";
 
-import Skills from "./skills";
-import About from "./about";
+import Skills from "@/components/Skills";
+import About from "@/components/About";
 
 export default function Home() {
   return (
 
     
     // This basically works
-    <div>
+    <div className={styles.mainDiv}>
       
    
       <main>
-        <h1>Home</h1>
-        <p>Hi, I'm Tyler</p>
+        <h1>Hi, Im Tyler Chenoweth</h1>
+        <p>I am a Full-Stack Developer based in Tampa, FL</p>
       </main>
       <hr></hr>
       <About/>
@@ -26,23 +26,6 @@ export default function Home() {
       
       
 
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <br></br><br></br><br></br><br></br><br></br><br></br><br></br>

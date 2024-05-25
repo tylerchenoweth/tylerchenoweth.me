@@ -111,6 +111,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* orange */
+/* background: linear-gradient(0deg, #ff7e5f, #feb47b); */
+
+/* blue */
+/* background: linear-gradient(135deg, #4990ff, #000eff); */
+
+/* ocean gradient */
+/* background: linear-gradient(180deg, #5595ff, #020031); */
+
 body {
-  background: linear-gradient(0deg, #ff7e5f, #feb47b);
+  background: linear-gradient(180deg, #4990ff, #010180);
+  margin: 0;
+  padding: 0;
 }
+
+
+
+
