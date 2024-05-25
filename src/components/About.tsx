@@ -6,7 +6,7 @@ import styles from "./About.module.css";
 
 export default function About() {
     return (
-        <section className={styles.aboutCard} >
+        <div id="about" className={styles.aboutCard} >
             <div className={styles.imgDiv}>
                 <Image src="/CooperFox.PNG" alt="Logo" width={300} height={300}/>
             </div>
@@ -22,6 +22,6 @@ export default function About() {
                 </div>
             </div>
             
-        </section>
+        </div>
     )
 }
