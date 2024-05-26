@@ -121,9 +121,10 @@ html {
 /* background: linear-gradient(180deg, #5595ff, #020031); */
 
 body {
-  background: linear-gradient(180deg, #4990ff, #010180);
+  background: linear-gradient(150deg, #4990ff, #010180);
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 

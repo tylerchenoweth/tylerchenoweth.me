@@ -15,11 +15,13 @@ export default function About() {
                     <h1>About</h1>
                     <p>Just pay me to build cool shit and dont ask any questions</p>
                 </div>
-                <div className={styles.resumeLink}>
-                    <Link href="/TylerChenowethResumeMay2024.pdf">
-                        View Resume
+                
+                    <Link className={styles.resumeLink} href="/TylerChenowethResumeMay2024.pdf">
+                        <div >
+                            View Resume
+                        </div>
                     </Link>
-                </div>
+                
             </div>
             
         </div>

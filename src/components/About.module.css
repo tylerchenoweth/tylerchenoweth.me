@@ -51,14 +51,17 @@
     align-items: center;
     
     border: 1px solid black;
+    
 }
 
 .resumeLink {
     background-color: whitesmoke;
     border-radius: 100px;
+    text-decoration: none;
+    color: black;
 }
 
-.resumeLink a {
-    text-decoration: none;
-    color: inherit;
+.resumeLink:hover {
+    background: linear-gradient(0deg, #ff7e5f, #feb47b);
+    color: white;
 }

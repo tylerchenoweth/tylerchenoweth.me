@@ -11,18 +11,11 @@ export default function Navbar() {
             <div className={styles.navItem}>
                 <Link className={styles.navLink} href="#home">Home</Link>
             </div>
-            
-            <div className={styles.navItem}>
-                <Link className={styles.navLink} href="#skills">Skills</Link>
-            </div>
             <div className={styles.navItem}>
                 <Link className={styles.navLink} href="#about">About</Link>
             </div>
-            <div className={styles.navItem}> 
-                <Link className={styles.navLink} href="#first-section">My first section</Link>
-            </div>
             <div className={styles.navItem}>
-                <Link className={styles.navLink} href="#second-section">My second section</Link>
+                <Link className={styles.navLink} href="#skills">Skills</Link>
             </div>
             
         </nav>
