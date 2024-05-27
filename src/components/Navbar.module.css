@@ -30,18 +30,29 @@
 
 }
 
-.navLink {
+
+
+
+
+.navItem {
     margin: 10px;
     padding: 10px;
     border: 0px solid white;
     border-radius: 10px;
-    text-decoration: none;
-    color: white;
+    
     /* background-color: #478CFF; */
     
-    background: linear-gradient(0deg, #ff7e5f, #feb47b);
+    background: linear-gradient(150deg, #ff7e5f, #feb47b);
 }
 
-.navItem {
-    /* background-color: blue; */
+.navItem:hover {
+
+    
+    background: linear-gradient(330deg,  #ff7e5f, #feb47b);
+}
+
+
+.navLink {
+    text-decoration: none;
+    color: white;
 }
