@@ -8,7 +8,7 @@ export default function About() {
     return (
         <div id="about" className={styles.aboutCard} >
             <div className={styles.imgDiv}>
-                <Image src="/CooperFox.PNG" alt="Logo" width={300} height={300}/>
+                <Image src="/gengar.png" alt="Logo" width={300} height={300}/>
             </div>
             <div className={styles.detailsDiv}>
                 <div className={styles.detailsInnerDiv}>
@@ -23,6 +23,15 @@ export default function About() {
                     </Link>
                 
             </div>
+
+      
+                <div className={styles.container}>
+                    <div className={styles.content}>
+                        <p>Container with gradient border using border-image.</p>
+                    </div>
+                </div>
+            
+            
             
         </div>
     )

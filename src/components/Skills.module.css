@@ -10,16 +10,53 @@
     
 }
 
-.skillsSection div {
-    border: 1px solid white;
-    border-radius: 10px;
+.skillCard {
+
+
+
+
     margin: 10px;
     padding: 10px;
     text-align: left;
     width:100%;
+
+    position: relative;
     
+    background: linear-gradient(150deg, #4990ff, #010180);
+
+    border-radius: 5px;
+    
+}
+
+.skillCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background-image: linear-gradient(0deg, #ff7e5f, #feb47b);
 }
 
 .skillsSection div ul {
     list-style-type: none;
+    text-align: left;
+    padding: 0px;
 }
+
+.skillCard h1 {
+    text-align:center;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.cardTitle {
+    background: linear-gradient(0deg, #ff7e5f, #feb47b);
+    border-radius: 10px;
+}
+
+/* background: linear-gradient(0deg, #ff7e5f, #feb47b); */
