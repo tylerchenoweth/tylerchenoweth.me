@@ -25,35 +25,6 @@
 }
 
 
-.navLinkGroup {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-
-.navItem {
-    margin: 10px;
-    padding: 10px;
-    border: 0px solid white;
-    border-radius: 10px;
-    
-    /* background-color: #478CFF; */
-    
-    background: linear-gradient(150deg, #ff7e5f, #feb47b);
-}
-
-.navItem:hover {
-
-    
-    background: linear-gradient(330deg,  #ff7e5f, #feb47b);
-}
-
-
-.navLink {
-    text-decoration: none;
-    color: white;
-}
 
 .navLogo {
     justify-content: flex-start;
@@ -65,3 +36,27 @@
     border-radius: 10px;
     margin: 10px;
 }
+
+
+
+.navLinkGroup {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+.navLink {
+    margin: 10px;
+    padding: 10px;
+    border: 0px solid white;
+    border-radius: 10px;
+    background: linear-gradient(150deg, #ff7e5f, #feb47b);
+    text-decoration: none;
+    color: white;
+}
+
+.navLink:hover {
+    background: linear-gradient(330deg,  #ff7e5f, #feb47b);
+}
+

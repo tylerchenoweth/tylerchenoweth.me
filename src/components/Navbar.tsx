@@ -7,22 +7,14 @@ import styles from './Navbar.module.css'
 export default function Navbar() {
     return(
         <nav className={styles.navbar}>
-            
             <div className={styles.navLogo}>
                 <img src="/CooperFox.PNG"></img>
             </div>
             <div className={styles.navLinkGroup}>
-                <div className={styles.navItem}>
-                    <Link className={styles.navLink} href="#home">Home</Link>
-                </div>
-                <div className={styles.navItem}>
-                    <Link className={styles.navLink} href="#about">About</Link>
-                </div>
-                <div className={styles.navItem}>
+                    <Link className={styles.navLink} href="#home">Home</Link>              
+                    <Link className={styles.navLink} href="#about">About</Link>            
                     <Link className={styles.navLink} href="#skills">Skills</Link>
-                </div>
-            </div>
-            
+            </div>  
         </nav>
     );
 }
