@@ -60,3 +60,17 @@
 }
 
 /* background: linear-gradient(0deg, #ff7e5f, #feb47b); */
+
+.skillCard li {            
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillsIcon {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.skillCardList {
+    font-size: 1.5rem;
+}
