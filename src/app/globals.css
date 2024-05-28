@@ -109,7 +109,6 @@ a {
 
 html {
   scroll-behavior: smooth;
-  background-color:orange;
 }
 
 /* orange */
@@ -126,6 +125,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  width: 100%;
 }
 
 
