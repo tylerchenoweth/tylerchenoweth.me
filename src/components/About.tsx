@@ -16,11 +16,11 @@ export default function About() {
                     <hr></hr>
                     <p>Just pay me to build cool shit and dont ask any questions</p>
                 </div>
-
-                <Link className={styles.resumeLink} href="/TylerChenowethResumeMay2024.pdf">
-                    <h1>View Resume</h1>
-                </Link>
-
+                <div className={styles.linkWrapper}>
+                    <Link className={styles.resumeLink} href="/TylerChenowethResumeMay2024.pdf">
+                        <h1>View Resume</h1>
+                    </Link>
+                </div>
             </div>
 
             {/* This was a test div for the gradient border */}
