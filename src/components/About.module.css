@@ -50,10 +50,10 @@
     position: relative;
     padding: 5px;
     /* Adjust the padding to match the border thickness */
-    background: linear-gradient(0deg, #ff7e5f, #feb47b);
+    background: linear-gradient(150deg, #ff7e5f, #feb47b);
     border-radius: 8px;
     /* Optional: to round the corners */
-    width: 30%;
+    width: 35%;
 }
 
 .resumeLink {
@@ -64,7 +64,7 @@
     text-decoration: none;
     color: white;
     /* Ensure the text color is visible */
-    background: linear-gradient(330deg, #4990ff, #010180);
+    /* background: linear-gradient(330deg, #4990ff, #010180); */
     border-radius: 6px;
     /* Optional: should be slightly less than the container radius */
     padding: 10px;
@@ -74,13 +74,11 @@
 }
 
 .resumeLink:hover {
-    background: linear-gradient(330deg, #ff7e5f, #feb47b);
+    background: linear-gradient(330deg,  #ff7e5f, #feb47b);
     color: white;
 }
 
-.linkWrapper:hover {
-    background: linear-gradient(330deg, #4990ff, #010180);
-}
+
 
 
 
