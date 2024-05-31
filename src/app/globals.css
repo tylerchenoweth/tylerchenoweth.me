@@ -136,7 +136,7 @@ body {
   padding: 0;
   color: white;*/
 
-  background: linear-gradient(135deg, #4990ff, #000eff);
+  background: linear-gradient(150deg, #4990ff, #010180);
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -155,7 +155,7 @@ body {
 }
 
 @media (max-width: 768px) {
-.container {
+.mainDiv {
   padding: 10px;
 }
 }

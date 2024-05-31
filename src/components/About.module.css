@@ -79,7 +79,12 @@
 }
 
 
-
+@media (max-width: 600px) {
+    .aboutCard {
+        flex-direction: column;
+    }
+    
+}
 
 
 /* This was test css for a gradient border */
