@@ -107,8 +107,17 @@ a {
 } */
 
 
-html {
+
+
+html, body {
   scroll-behavior: smooth;
+  /* background: linear-gradient(150deg, #4990ff, #010180); */
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* orange */
@@ -121,14 +130,32 @@ html {
 /* background: linear-gradient(180deg, #5595ff, #020031); */
 
 body {
-  background: linear-gradient(150deg, #4990ff, #010180);
-  margin: 0;
-  padding: 0;
   color: white;
-  width: 100vw;
-  height: 100vh;
+
+  /* margin: 0;
+  padding: 0;
+  color: white;*/
+
+  background: linear-gradient(135deg, #4990ff, #000eff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
 
 
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-
+@media (max-width: 768px) {
+.container {
+  padding: 10px;
+}
+}
