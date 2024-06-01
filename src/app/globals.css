@@ -117,6 +117,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  /* White screen solution? */
   overflow: auto;
   overflow-x: hidden;
 }
@@ -142,6 +143,10 @@ body {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+
+  /* White screen solution? */
+  visibility: visible;
+  display: block;
 }
 
 
