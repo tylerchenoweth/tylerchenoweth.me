@@ -53,7 +53,7 @@
     background: linear-gradient(150deg, #ff7e5f, #feb47b);
     border-radius: 8px;
     /* Optional: to round the corners */
-    width: 35%;
+    width: 15rem;
 }
 
 .resumeLink {
@@ -79,11 +79,14 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .aboutCard {
         flex-direction: column;
     }
-    
+
+
+
+
 }
 
 
