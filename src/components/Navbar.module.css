@@ -7,18 +7,13 @@
 
 .navbar {
     display: flex;
-    width: 100%;
-    height: 60px;
 
-    /* Space links evenly */
-    /* justify-content: space-around;  */
-
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0,0,0,0);
+    /* This spaces all elements evenly */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5em 1em;
+    position: relative;
 
     
 
@@ -26,24 +21,20 @@
 
 
 
-.navLogo {
-    /* justify-content: flex-start; */
-    display: flex
-}
 
 .navLogo img {
-    height: 100%;
+    height: 3rem;
     aspect-ratio: 1;
     border-radius: 10px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 
 
 .navLinkGroup {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    gap: 1em;
 }
 
 
@@ -61,3 +52,14 @@
     background: linear-gradient(330deg,  #ff7e5f, #feb47b);
 }
 
+
+@media(max-width: 600px) {
+    .navLinkGroup {
+        display: none;
+    }
+
+    .navLogo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
