@@ -13,9 +13,9 @@ export default function Navbar() {
                 <img src="/CooperFox.PNG"></img>
             </div>
             <div className={styles.navLinkGroup}>
-                <Link className={styles.navLink} href="#home"><b>Home</b></Link>              
-                <Link className={styles.navLink} href="#about"><b>About</b></Link>            
-                <Link className={styles.navLink} href="#skills"><b>Skills</b></Link>
+            <Link className={styles.navLink} href="#home"><b>Home</b></Link>              
+            <Link className={styles.navLink} href="#about"><b>About</b></Link>            
+            <Link className={styles.navLink} href="#skills"><b>Skills</b></Link>
             </div>  
         </nav>
     );
