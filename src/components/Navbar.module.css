@@ -11,7 +11,7 @@
     /* This spaces all elements evenly */
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    /* background-color: #333; */
     padding: 0.5em 1em;
     position: relative;
 
@@ -23,7 +23,7 @@
 
 
 .navLogo img {
-    height: 3rem;
+    height: 5rem;
     aspect-ratio: 1;
     border-radius: 10px;
     /* margin: 10px; */
@@ -40,12 +40,13 @@
 
 .navLink {
     margin: 10px;
-    padding: 10px;
+    padding: 1rem;
     border: 0px solid white;
     border-radius: 10px;
     background: linear-gradient(150deg, #ff7e5f, #feb47b);
     text-decoration: none;
     color: white;
+    font-size: 1.5rem;
 }
 
 .navLink:hover {
@@ -53,7 +54,7 @@
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .navLinkGroup {
         display: none;
     }
