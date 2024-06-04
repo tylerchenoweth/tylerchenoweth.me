@@ -1,6 +1,6 @@
 .aboutCard {
     display: flex;
-
+    /* background-color: #333; */
 }
 
 .imgDiv {
@@ -17,11 +17,11 @@
 
 .detailsDiv {
 
-    padding: 20px;
-
-    margin: 10px;
+    
     /* background-color: #f0f0f0;
     border: 1px solid #ccc; */
+    margin: 10px;
+    padding: 20px;
     text-align: left;
     width: 100%;
 }
@@ -79,12 +79,50 @@
 }
 
 
-@media (max-width: 730px) {
+@media (max-width: 768px) {
     .aboutCard {
         flex-direction: column;
+        
     }
 
+    .imgDiv {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
 
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .detailsDiv {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .linkWrapper {
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 0;
+        padding-right: 0;
+
+        box-sizing: border-box;
+    }
+
+    .resumeLink {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
 
 
 }
