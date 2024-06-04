@@ -162,6 +162,15 @@ body {
   box-sizing: border-box;
 }
 
+
+
+img {
+  border-radius: 10px;
+  background-image: linear-gradient(0deg, #ff7e5f, #feb47b);
+}
+
+
+
 @media (max-width: 768px) {
 .mainDiv {
   padding: 10px;
