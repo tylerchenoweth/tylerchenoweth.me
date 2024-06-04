@@ -74,9 +74,17 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .skillsSection {
         flex-direction: column;
+    }
+
+    .skillCard {
+        /* padding: 0; */
+        margin-left: auto;
+        margin-right: auto;
+        
+        box-sizing: border-box;
     }
     
 }
