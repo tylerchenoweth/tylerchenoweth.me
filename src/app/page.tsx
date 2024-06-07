@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 
 import Skills from "@/components/Skills";
 import About from "@/components/About";
+import CooperSVG from "@/components/Cooper";
 
 export default function Home() {
   return (
@@ -24,12 +25,13 @@ export default function Home() {
       <Skills/>
       <hr></hr>
       
-      
+      <CooperSVG />
 
       
       
       <p>hey! down here!</p>
       <br></br><br></br><br></br><br></br>
     </div>
+    
   );
 }
