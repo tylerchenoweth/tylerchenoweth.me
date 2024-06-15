@@ -149,6 +149,8 @@ body {
   /* White screen solution? */
   visibility: visible;
   display: block;
+
+  min-height: 100vh;
 }
 
 
