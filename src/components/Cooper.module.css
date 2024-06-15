@@ -1,3 +1,12 @@
 .backgroundGradient {
     background: linear-gradient(0deg, #ff7e5f, #feb47b);
 }
+
+.svgContainer {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed (center, space-between, etc.) */
+    align-items: center;
+}
+
+
+
