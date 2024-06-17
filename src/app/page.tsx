@@ -1,13 +1,22 @@
 import Image from "next/image";
 import Link from 'next/link'
 
+
+
 import styles from "./page.module.css";
 
 import Skills from "@/components/Skills";
 import About from "@/components/About";
-import CooperSVG from "@/components/Cooper";
+
+import 
+{ CooperSVG, CooperNewDesign, CooperSvgParameters} 
+  from "@/components/Cooper";
+// import CooperSvgBlack from "@/components/Cooper";
 
 export default function Home() {
+
+
+
   return (
 
     
@@ -26,8 +35,13 @@ export default function Home() {
       <hr></hr>
       
       <CooperSVG />
+      <CooperNewDesign />
 
-      
+      <CooperSvgParameters CooperStyle="Outline" />
+      <CooperSvgParameters CooperStyle="OutlineWhiskers" />
+      <CooperSvgParameters CooperStyle="Filled" />
+      <CooperSvgParameters CooperStyle="FilledWhiskers" />
+  
       
       <p>hey! down here!</p>
       <br></br><br></br><br></br><br></br>
