@@ -4,9 +4,16 @@
 
 .svgContainer {
     display: flex;
-    justify-content: space-around; /* Adjust as needed (center, space-between, etc.) */
+    justify-content: center; /* Adjust as needed (center, space-between, etc.) */
     align-items: center;
+    border: 2px solid white;
 }
 
+
+.svgContainer svg {
+    
+
+    border: 2px solid white;
+}
 
 
