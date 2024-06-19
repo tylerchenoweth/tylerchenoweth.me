@@ -4,69 +4,71 @@ import styles from './Cooper.module.css'
 
 export function CooperSVG() {
     return(
-        <svg width="600" height="600" viewBox="0 0 1200 1200">
-            
+        <div className={styles.svgContainer}>
+            <svg width="600" height="600" viewBox="0 0 1200 1200">
+                
 
-            {/* <polygon 
-                points="0,0 1200,0 1200,1200 0,1200"
-                style={{fill: `url(#grad1);`}} 
-            /> */}
+                {/* <polygon 
+                    points="0,0 1200,0 1200,1200 0,1200"
+                    style={{fill: `url(#grad1);`}} 
+                /> */}
 
-            {/* head */}
-            <polygon points = 
+                {/* head */}
+                <polygon points = 
+                    "
+                        10,525 
+                        215,92 
+                        281,378 
+                        404,386 
+                        520,106 
+                        601,377 
+                        861,562 
+                        567,731 
+                        394,1180 
+                        
+                    "
+                    style={{fill:'white', stroke:'black', strokeWidth: 15 }}
+                />
+
+                {/* left eye */}
+                <ellipse cx="486" cy="435" r="15" rx="25" ry="30" fill="black" stroke='none'/>
+                {/* right eye */}
+                <ellipse cx="723" cy="413" r="15" rx="25" ry="29" fill="black" stroke='none' />
+
+                {/* nose */}
+                <polygon points=
                 "
-                    10,525 
-                    215,92 
-                    281,378 
-                    404,386 
-                    520,106 
-                    601,377 
-                    861,562 
-                    567,731 
-                    394,1180 
-                    
+                    851,562
+                    797,524
+                    778,554
+                    801,590
+                    851,562
                 "
-                style={{fill:'white', stroke:'black', strokeWidth: 15 }}
-            />
+                style={{fill:'black', stroke:'black', strokeWidth: 15 }}
+                />
 
-            {/* left eye */}
-            <ellipse cx="486" cy="435" r="15" rx="25" ry="30" fill="black" stroke='none'/>
-            {/* right eye */}
-            <ellipse cx="723" cy="413" r="15" rx="25" ry="29" fill="black" stroke='none' />
+                {/* mouth */}
+                <polygon points=
+                "
+                    491,634
+                    703,654
+                "
 
-            {/* nose */}
-            <polygon points=
-            "
-                851,562
-                797,524
-                778,554
-                801,590
-                851,562
-            "
-            style={{fill:'black', stroke:'black', strokeWidth: 15 }}
-            />
+                style={{fill:'black', stroke:'black', strokeWidth: 15 }}
+                />
 
-            {/* mouth */}
-            <polygon points=
-            "
-                491,634
-                703,654
-            "
+                {/* whiskers left */}
+                <line x1="411" y1="532"  x2="271" y2="502" style={{stroke:'black', strokeWidth:'10'}} />
+                <line x1="411" y1="562"  x2="271" y2="562" style={{stroke:'black', strokeWidth:'10'}} />
+                <line x1="411" y1="592"  x2="271" y2="622" style={{stroke:'black', strokeWidth:'10'}} />
 
-            style={{fill:'black', stroke:'black', strokeWidth: 15 }}
-            />
-
-            {/* whiskers left */}
-            <line x1="411" y1="532"  x2="271" y2="502" style={{stroke:'black', strokeWidth:'10'}} />
-            <line x1="411" y1="562"  x2="271" y2="562" style={{stroke:'black', strokeWidth:'10'}} />
-            <line x1="411" y1="592"  x2="271" y2="622" style={{stroke:'black', strokeWidth:'10'}} />
-
-            {/* whiskers right */}
-            <line x1="911" y1="532"  x2="1051" y2="502" style={{stroke:'black', strokeWidth:'10'}} />
-            <line x1="911" y1="562"  x2="1051" y2="562" style={{stroke:'black', strokeWidth:'10'}} />
-            <line x1="911" y1="592"  x2="1051" y2="622" style={{stroke:'black', strokeWidth:'10'}} />
-            
-        </svg>
+                {/* whiskers right */}
+                <line x1="911" y1="532"  x2="1051" y2="502" style={{stroke:'black', strokeWidth:'10'}} />
+                <line x1="911" y1="562"  x2="1051" y2="562" style={{stroke:'black', strokeWidth:'10'}} />
+                <line x1="911" y1="592"  x2="1051" y2="622" style={{stroke:'black', strokeWidth:'10'}} />
+                
+            </svg>
+        </div>
     );
 }
 
@@ -169,15 +171,16 @@ export function CooperNewDesign() {
 
 
 
+export function cooperEyes() {
+    
+}
+
+
+
 
 
 
 export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) {
-
-    console.log("\n")
-    console.log(cooperSecondBody.cooperSecondBody);
-    console.log("After passing ^^^");
-    console.log("\n\n\n");
 
     return (
         <svg width="600" height="600" viewBox="0 0 1200 1200">
@@ -268,11 +271,6 @@ export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) 
 
 export function CooperSvgDiamond(cooperBody, cooperSecondBody, cooperWhiskers) {
 
-    console.log("\n")
-    console.log(cooperSecondBody.cooperSecondBody);
-    console.log("After passing ^^^");
-    console.log("\n\n\n");
-
     return (
         <svg width="600" height="600" viewBox="0 0 1200 1200">
 
@@ -339,11 +337,6 @@ export function CooperSvgDiamond(cooperBody, cooperSecondBody, cooperWhiskers) {
 
 
 export function CooperSvgSquare(cooperBody, cooperSecondBody, cooperWhiskers) {
-
-    console.log("\n")
-    console.log(cooperSecondBody.cooperSecondBody);
-    console.log("After passing ^^^");
-    console.log("\n\n\n");
 
     return (
         <svg width="600" height="600" viewBox="0 0 1200 1200">
