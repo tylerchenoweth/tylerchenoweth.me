@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import styles from "./page.module.css";
 
+import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
 
@@ -21,30 +22,33 @@ export default function Home() {
 
     
     // This basically works
-    <div className={styles.mainDiv}>
+    <div >
       
-   
-      <main className={styles.intro}>
-        <h1>Hi, Im Tyler Chenoweth</h1>
-        <p>I am a Full-Stack Developer based in Tampa, FL</p>
-      </main>
-      <hr></hr>
-      <About/>
+      <Navbar/>
 
-      <Skills/>
-      <hr></hr>
-      
-      {/* <CooperSVG />
-      <CooperNewDesign />
+      <div className={styles.mainDiv}>
+        <main className={styles.intro}>
+          <h1>Hi, Im Tyler Chenoweth</h1>
+          <p>I am a Full-Stack Developer based in Tampa, FL</p>
+        </main>
+        <hr></hr>
+        <About/>
 
-      <CooperSvgParameters CooperStyle="Outline" />
-      <CooperSvgParameters CooperStyle="OutlineWhiskers" />
-      <CooperSvgParameters CooperStyle="Filled" />
-      <CooperSvgParameters CooperStyle="FilledWhiskers" /> */}
-  
-      
-      <p>hey! down here!</p>
-      <br></br><br></br><br></br><br></br>
+        <Skills/>
+        <hr></hr>
+        
+        {/* <CooperSVG />
+        <CooperNewDesign />
+
+        <CooperSvgParameters CooperStyle="Outline" />
+        <CooperSvgParameters CooperStyle="OutlineWhiskers" />
+        <CooperSvgParameters CooperStyle="Filled" />
+        <CooperSvgParameters CooperStyle="FilledWhiskers" /> */}
+    
+        
+        <p>hey! down here!</p>
+        <br></br><br></br><br></br><br></br>
+      </div>
     </div>
     
   );
