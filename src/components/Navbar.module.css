@@ -20,7 +20,11 @@
 }
 
 
-
+.navLogo svg {
+    height: 7rem;
+    width: auto;
+    margin-left: 0;
+}
 
 .navLogo img {
     height: 5rem;

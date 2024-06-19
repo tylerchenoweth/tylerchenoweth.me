@@ -5,12 +5,13 @@ import {usePathname} from 'next/navigation'
 
 import styles from './Navbar.module.css';
 // import globalStyles from '../app/';
+import {CooperSVG} from "@/components/Cooper";
 
 export default function Navbar() {
     return(
         <nav className={styles.navbar}>
             <div className={styles.navLogo}>
-                <img src="/CooperFox.PNG"></img>
+                <CooperSVG />
             </div>
             <div className={styles.navLinkGroup}>
             <Link className={styles.navLink} href="#home"><b>Home</b></Link>              
