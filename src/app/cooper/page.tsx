@@ -17,31 +17,31 @@ export default function Home() {
 
 
 
-  return (
+
+    return (
 
     
-    // This basically works
-    <div className={styles.mainDiv}>
-      
-   
-      <main className={styles.intro}>
-        <h1>Hi, Im Tyler Chenoweth</h1>
-        <p>I am a Full-Stack Developer based in Tampa, FL</p>
-      </main>
-      
-      
-      <CooperSVG />
-      <CooperNewDesign />
-
-      <CooperSvgParameters CooperStyle="Outline" />
-      <CooperSvgParameters CooperStyle="OutlineWhiskers" />
-      <CooperSvgParameters CooperStyle="Filled" />
-      <CooperSvgParameters CooperStyle="FilledWhiskers" />
-  
-      
-      <p>hey! down here!</p>
-      <br></br><br></br><br></br><br></br>
-    </div>
+        // This basically works
+        <div className={styles.mainDiv}>
+        
     
-  );
+        <main className={styles.intro}>
+            <h1>Hi, Im Tyler Chenoweth</h1>
+            <p>I am a Full-Stack Developer based in Tampa, FL</p>
+        </main>
+        
+        
+        <CooperSVG />
+
+        <CooperSvgParameters CooperStyle="Outline" />
+        <CooperSvgParameters CooperStyle="OutlineWhiskers" />
+        <CooperSvgParameters CooperStyle="Filled" />
+        <CooperSvgParameters CooperStyle="FilledWhiskers" />
+    
+        
+        <p>hey! down here!</p>
+        <br></br><br></br><br></br><br></br>
+        </div>
+    
+    );
 }
