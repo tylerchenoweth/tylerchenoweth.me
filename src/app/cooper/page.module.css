@@ -1,0 +1,14 @@
+.mainDiv {
+    width: 75%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background-color: purple; */
+}
+
+.intro {
+    text-align: center;
+
+    /* background-color: #333; */
+}

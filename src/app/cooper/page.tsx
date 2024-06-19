@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from 'next/link'
+import Link from 'next/link';
 
-import styles from "@/app/globals.css"
+// import styles from "page.module.css";
 
-// import styles from "./page.module.css";
+import styles from "./page.module.css";
 
 import Skills from "@/components/Skills";
 import About from "@/components/About";
