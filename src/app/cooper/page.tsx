@@ -25,20 +25,20 @@ export default function Home() {
         <div className={styles.mainDiv}>
         
     
-        <main className={styles.intro}>
-            
-            <CooperSVG />
+            <main className={styles.intro}>
+                
+                <CooperSVG />
 
-            <CooperSvgParameters CooperStyle="Outline" />
-            <CooperSvgParameters CooperStyle="OutlineWhiskers" />
-            <CooperSvgParameters CooperStyle="Filled" />
-            <CooperSvgParameters CooperStyle="FilledWhiskers" />
+                <CooperSvgParameters CooperStyle="Outline" />
+                <CooperSvgParameters CooperStyle="OutlineWhiskers" />
+                <CooperSvgParameters CooperStyle="Filled" />
+                <CooperSvgParameters CooperStyle="FilledWhiskers" />
 
-        </main>
-    
+            </main>
         
-        <p>hey! down here!</p>
-        <br></br><br></br><br></br><br></br>
+            
+            <p>hey! down here!</p>
+            <br></br><br></br><br></br><br></br>
         </div>
     
     );
