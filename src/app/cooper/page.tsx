@@ -26,17 +26,15 @@ export default function Home() {
         
     
         <main className={styles.intro}>
-            <h1>Hi, Im Tyler Chenoweth</h1>
-            <p>I am a Full-Stack Developer based in Tampa, FL</p>
-        </main>
-        
-        
-        <CooperSVG />
+            
+            <CooperSVG />
 
-        <CooperSvgParameters CooperStyle="Outline" />
-        <CooperSvgParameters CooperStyle="OutlineWhiskers" />
-        <CooperSvgParameters CooperStyle="Filled" />
-        <CooperSvgParameters CooperStyle="FilledWhiskers" />
+            <CooperSvgParameters CooperStyle="Outline" />
+            <CooperSvgParameters CooperStyle="OutlineWhiskers" />
+            <CooperSvgParameters CooperStyle="Filled" />
+            <CooperSvgParameters CooperStyle="FilledWhiskers" />
+
+        </main>
     
         
         <p>hey! down here!</p>
