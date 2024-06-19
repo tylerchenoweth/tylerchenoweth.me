@@ -166,10 +166,17 @@ export function CooperNewDesign() {
 }
 
 
+
+
+
+
+
+
 export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) {
 
-    console.log("\n\n\n\n");
-    console.log(cooperSecondBody);
+    console.log("\n")
+    console.log(cooperSecondBody.cooperSecondBody);
+    console.log("After passing ^^^");
     console.log("\n\n\n");
 
     return (
@@ -188,7 +195,7 @@ export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) 
                         394,1180 
                         
                     "
-                    style={{...cooperSecondBody}}
+                    style={{...cooperSecondBody.cooperSecondBody}}
                 />
 
                 {/* head */}
@@ -244,66 +251,30 @@ export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) 
                 />
 
                 {/* whiskers left */}
-                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers}} />
-                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers}} />
-                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers}} />
+                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
                 {/* whiskers right */}
-                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers}} />
-                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers}} />
-                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers}} />
+                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
         </svg>
     )
 }
 
-export function test() {
-    return(<h1>hello</h1>)
-}
 
-export function CooperSvgParameters({CooperStyle}) {
 
-    let cooperBody = {};
-    let cooperSecondBody = {};
-    let cooperWhiskers = {};
-    
-    if(CooperStyle == "Outline") {
-        cooperBody = {fill: "None", stroke: "Black", strokeWidth: 15};
-        cooperSecondBody = {stroke: "None", fill: "None"};
-        cooperWhiskers = {stroke: "None", strokeWidth:'10'};
-    }
-    else if(CooperStyle == "OutlineWhiskers") {
-        cooperBody = {fill: "None", stroke: "Black", strokeWidth: 15};
-        cooperSecondBody = {stroke: "None", fill: "None"};
-        cooperWhiskers = {stroke: "Black", strokeWidth:'10'};
-    }
-    else if(CooperStyle == "Filled") {
-        cooperBody = {fill: "White", stroke: "Black", strokeWidth: 15};
-        cooperSecondBody = {stroke: "None", fill: "White"};
-        cooperWhiskers = {stroke: "None", strokeWidth:'10'};
-    }
-    else if(CooperStyle == "FilledWhiskers") {
-        cooperBody = {fill: "White", stroke: "Black", strokeWidth: 15};
-        cooperSecondBody = {stroke: "None", fill: "White"};
-        cooperWhiskers = {stroke: "Black", strokeWidth:'10'};
-    }
-    
-    const svgWidth = 1200;
-    const svgHeight = 600;
+export function CooperSvgDiamond(cooperBody, cooperSecondBody, cooperWhiskers) {
 
-   
+    console.log("\n")
+    console.log(cooperSecondBody.cooperSecondBody);
+    console.log("After passing ^^^");
+    console.log("\n\n\n");
 
     return (
-        <div className={styles.svgContainer}>
-
-
-            {/* No bottom design */}
-            {CooperSvgNoBottom({cooperBody}, {cooperSecondBody}, {cooperWhiskers})}
-            
-
-
-            {/* Diamond design */}
-            <svg width="600" height="600" viewBox="0 0 1200 1200">
+        <svg width="600" height="600" viewBox="0 0 1200 1200">
 
                 {/* head */}
                 <polygon points = 
@@ -319,7 +290,7 @@ export function CooperSvgParameters({CooperStyle}) {
                         394,1180 
                         
                     "
-                    style={{ ...cooperBody }}
+                    style={{ ...cooperBody.cooperBody }}
                 />
 
                 {/* left eye */}
@@ -352,21 +323,30 @@ export function CooperSvgParameters({CooperStyle}) {
 
                 
                 {/* whiskers left */}
-                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers}} />
-                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers}} />
-                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers}} />
+                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
                 {/* whiskers right */}
-                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers}} />
-                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers}} />
-                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers}} />
+                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
-            </svg>
+        </svg>
+    )
+}
 
 
 
-            {/* Square design */}
-            <svg width="600" height="600" viewBox="0 0 1200 1200">
+export function CooperSvgSquare(cooperBody, cooperSecondBody, cooperWhiskers) {
+
+    console.log("\n")
+    console.log(cooperSecondBody.cooperSecondBody);
+    console.log("After passing ^^^");
+    console.log("\n\n\n");
+
+    return (
+        <svg width="600" height="600" viewBox="0 0 1200 1200">
 
                 {/* head */}
                 <polygon points = 
@@ -383,7 +363,7 @@ export function CooperSvgParameters({CooperStyle}) {
                         10,1180 
                         
                     "
-                    style={{...cooperBody}}
+                    style={{...cooperBody.cooperBody}}
                 />
 
                 {/* left eye */}
@@ -414,16 +394,66 @@ export function CooperSvgParameters({CooperStyle}) {
                 />
 
                 {/* whiskers left */}
-                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers}} />
-                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers}} />
-                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers}} />
+                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
                 {/* whiskers right */}
-                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers}} />
-                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers}} />
-                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers}} />
+                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
-            </svg>
+        </svg>
+    )
+}
+
+
+
+
+
+export function CooperSvgParameters({CooperStyle}) {
+
+    let cooperBody = {};
+    let cooperSecondBody = {};
+    let cooperWhiskers = {};
+    
+    if(CooperStyle == "Outline") {
+        cooperBody = {fill: "None", stroke: "Black", strokeWidth: 15};
+        cooperSecondBody = {stroke: "None", fill: "None"};
+        cooperWhiskers = {stroke: "None", strokeWidth:'10'};
+    }
+    else if(CooperStyle == "OutlineWhiskers") {
+        cooperBody = {fill: "None", stroke: "Black", strokeWidth: 15};
+        cooperSecondBody = {stroke: "None", fill: "None"};
+        cooperWhiskers = {stroke: "Black", strokeWidth:'10'};
+    }
+    else if(CooperStyle == "Filled") {
+        cooperBody = {fill: "White", stroke: "Black", strokeWidth: 15};
+        cooperSecondBody = {stroke: "None", fill: "White"};
+        cooperWhiskers = {stroke: "None", strokeWidth:'10'};
+    }
+    else if(CooperStyle == "FilledWhiskers") {
+        cooperBody = {fill: "White", stroke: "Black", strokeWidth: 15};
+        cooperSecondBody = {stroke: "None", fill: "White"};
+        cooperWhiskers = {stroke: "Black", strokeWidth:'10'};
+    }
+    
+    const svgWidth = 1200;
+    const svgHeight = 600;
+
+
+    // console.log(cooperSecondBody);
+    // console.log("Before passing ^^^");
+
+    return (
+        <div className={styles.svgContainer}>
+
+            
+
+            {/* No bottom design */}
+            {CooperSvgNoBottom({cooperBody}, {cooperSecondBody}, {cooperWhiskers})}
+            {CooperSvgDiamond({cooperBody}, {cooperSecondBody}, {cooperWhiskers})}
+            {CooperSvgSquare({cooperBody}, {cooperSecondBody}, {cooperWhiskers})}
             
             
         </div>
