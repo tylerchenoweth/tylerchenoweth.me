@@ -1,4 +1,5 @@
 'use-client'
+import React from 'react';
 
 import styles from './Cooper.module.css'
 
@@ -90,45 +91,66 @@ export function CooperNewDesign() {
 
 
 
-export function cooperEyes() {
-    
+
+
+
+interface CooperBody {
+    cooperBody: {
+        fill: string;
+        stroke: string;
+        strokeWidth: number;
+    }
 }
+  
+interface CooperSecondBody {
+    cooperSecondBody: {
+        stroke: string;
+        fill: string;
+    }
+}
+  
+interface CooperWhiskers {
+    cooperWhiskers: {
+        stroke: string;
+        strokeWidth: string;
+    }
+  }
+  
 
 
 
-
-
-
-export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) {
+export function CooperSvgNoBottom(cooperBody: CooperBody, cooperSecondBody: CooperSecondBody, cooperWhiskers: CooperWhiskers) {
 
     return (
         <svg width="600" height="600" viewBox="0 0 1200 1200">
+            <polygon 
+            points="10,525 215,92 281,378 404,386 520,106 601,377 861,562 567,731 394,1180" 
+            style={{...cooperSecondBody.cooperSecondBody}}
+            />
 
-                <polygon points="10,525 215,92 281,378 404,386 520,106 601,377 861,562 567,731 394,1180" style={{...cooperSecondBody.cooperSecondBody}} />
+            {/* head */}
+            <polygon points="10,525 215,92 281,378 404,386 520,106 601,377 861,562 567,731 394,1180 567,731 861,562 601,377 520,106 404,386 281,378 215,92 10,525" style={{fill:'none', stroke:'black', strokeWidth: 15 }} />
 
-                {/* head */}
-                <polygon points="10,525 215,92 281,378 404,386 520,106 601,377 861,562 567,731 394,1180 567,731 861,562 601,377 520,106 404,386 281,378 215,92 10,525" style={{fill:'none', stroke:'black', strokeWidth: 15 }} />
+            {/* left eye */}
+            <ellipse cx="486" cy="435" r="15" rx="25" ry="30" fill="black" stroke='none'/>
+            {/* right eye */}
+            <ellipse cx="723" cy="413" r="15" rx="25" ry="29" fill="black" stroke='none' />
 
-                {/* left eye */}
-                <ellipse cx="486" cy="435" r="15" rx="25" ry="30" fill="black" stroke='none'/>
-                {/* right eye */}
-                <ellipse cx="723" cy="413" r="15" rx="25" ry="29" fill="black" stroke='none' />
+            {/* nose */}
+            <polygon points="851,562 797,524 778,554 801,590 851,562" style={{fill:'black', stroke:'black', strokeWidth: 15 }} />
 
-                {/* nose */}
-                <polygon points="851,562 797,524 778,554 801,590 851,562" style={{fill:'black', stroke:'black', strokeWidth: 15 }} />
+            {/* mouth */}
+            <polygon points="491,634 703,654" style={{fill:'black', stroke:'black', strokeWidth: 15 }} />
 
-                {/* mouth */}
-                <polygon points="491,634 703,654" style={{fill:'black', stroke:'black', strokeWidth: 15 }} />
+            {/* whiskers left */}
+            <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+            <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+            <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
-                {/* whiskers left */}
-                <line x1="411" y1="532"  x2="271" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
-                <line x1="411" y1="562"  x2="271" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
-                <line x1="411" y1="592"  x2="271" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
-
-                {/* whiskers right */}
-                <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
-                <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
-                <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
+            {/* whiskers right */}
+            <line x1="911" y1="532"  x2="1051" y2="502" style={{...cooperWhiskers.cooperWhiskers}} />
+            <line x1="911" y1="562"  x2="1051" y2="562" style={{...cooperWhiskers.cooperWhiskers}} />
+            <line x1="911" y1="592"  x2="1051" y2="622" style={{...cooperWhiskers.cooperWhiskers}} />
 
         </svg>
     )
@@ -136,7 +158,7 @@ export function CooperSvgNoBottom(cooperBody, cooperSecondBody, cooperWhiskers) 
 
 
 
-export function CooperSvgDiamond(cooperBody, cooperSecondBody, cooperWhiskers) {
+export function CooperSvgDiamond(cooperBody: CooperBody, cooperSecondBody: CooperSecondBody, cooperWhiskers: CooperWhiskers) {
 
     return (
         <svg width="600" height="600" viewBox="0 0 1200 1200">
@@ -173,7 +195,7 @@ export function CooperSvgDiamond(cooperBody, cooperSecondBody, cooperWhiskers) {
 
 
 
-export function CooperSvgSquare(cooperBody, cooperSecondBody, cooperWhiskers) {
+export function CooperSvgSquare(cooperBody: CooperBody, cooperSecondBody: CooperSecondBody, cooperWhiskers: CooperWhiskers) {
 
     return (
         <svg width="600" height="600" viewBox="0 0 1200 1200">
@@ -210,28 +232,35 @@ export function CooperSvgSquare(cooperBody, cooperSecondBody, cooperWhiskers) {
 
 
 
-export function CooperSvgParameters({CooperStyle}) {
+
+interface StyleProps {
+    CooperStyle: string;
+}
+
+export function CooperSvgParameters(CooperStyle: StyleProps) {   
 
     let cooperBody = {};
     let cooperSecondBody = {};
     let cooperWhiskers = {};
+
+    const CooperStyleStr = CooperStyle.CooperStyle;
     
-    if(CooperStyle == "Outline") {
+    if(CooperStyleStr === "Outline") {
         cooperBody = {fill: "None", stroke: "Black", strokeWidth: 15};
         cooperSecondBody = {stroke: "None", fill: "None"};
         cooperWhiskers = {stroke: "None", strokeWidth:'10'};
     }
-    else if(CooperStyle == "OutlineWhiskers") {
+    else if(CooperStyleStr == "OutlineWhiskers") {
         cooperBody = {fill: "None", stroke: "Black", strokeWidth: 15};
         cooperSecondBody = {stroke: "None", fill: "None"};
         cooperWhiskers = {stroke: "Black", strokeWidth:'10'};
     }
-    else if(CooperStyle == "Filled") {
+    else if(CooperStyleStr == "Filled") {
         cooperBody = {fill: "White", stroke: "Black", strokeWidth: 15};
         cooperSecondBody = {stroke: "None", fill: "White"};
         cooperWhiskers = {stroke: "None", strokeWidth:'10'};
     }
-    else if(CooperStyle == "FilledWhiskers") {
+    else if(CooperStyleStr == "FilledWhiskers") {
         cooperBody = {fill: "White", stroke: "Black", strokeWidth: 15};
         cooperSecondBody = {stroke: "None", fill: "White"};
         cooperWhiskers = {stroke: "Black", strokeWidth:'10'};
@@ -241,8 +270,6 @@ export function CooperSvgParameters({CooperStyle}) {
     const svgHeight = 600;
 
 
-    // console.log(cooperSecondBody);
-    // console.log("Before passing ^^^");
 
     return (
         <div className={styles.svgContainer}>
