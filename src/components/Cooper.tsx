@@ -239,9 +239,9 @@ interface StyleProps {
 
 export function CooperSvgParameters(CooperStyle: StyleProps) {   
 
-    let cooperBody = {};
-    let cooperSecondBody = {};
-    let cooperWhiskers = {};
+    let cooperBody = {fill: "", stroke: "", strokeWidth: 0};
+    let cooperSecondBody = {stroke: "", fill: ""};
+    let cooperWhiskers = {stroke: "", strokeWidth: ""};
 
     const CooperStyleStr = CooperStyle.CooperStyle;
     
