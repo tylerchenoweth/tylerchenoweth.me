@@ -1,0 +1,192 @@
+.mainDiv {
+    width: 75%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background-color: purple; */
+}
+
+.intro {
+    text-align: center;
+
+    /* background-color: #333; */
+}
+
+
+
+
+.elementHover {
+    transition: all 0.3s ease;
+    background: linear-gradient(150deg, #ff7e5f, #feb47b);
+}
+  
+.elementHover:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes example {
+    0% {
+        transform: translateX(-0vw);
+    }
+    100% {
+        transform: translateX(85vw);
+    }
+}
+
+@keyframes trainMotion {
+    from { transform: translateY(0); }
+    50% { transform: translateY(-.25vw); }
+    to { transform: translateY(0); }
+}
+
+
+@keyframes mountains {
+    0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+}
+
+.animationTrail {
+    display: grid;
+    /* justify-content: space-around; */
+
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    /* border: 15px solid rgb(226, 123, 123); */
+    /* background: linear-gradient(150deg, #ff7e5f, #feb47b); */
+    background: linear-gradient(330deg, #4990ff, #010180);
+
+    
+    
+    height: 30rem;
+
+   
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+.mountainDiv {
+    /* border: 1px solid yellow; */
+    min-width: 200%;
+    height: 100%;
+    background-image: url('/MountainsBackgroundwMargin.svg');
+    /* flex: 1; */
+    position: absolute;
+
+    background-repeat: repeat;
+
+    animation: mountains 30s linear infinite;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    flex: 1;
+    top: 5;
+}
+
+.Tree {
+    animation: example 8s linear infinite;
+
+    min-width: 100px; /* Adjust size based on your needs */
+    /* background-color: lightblue; Adjust color based on your needs */
+  
+    flex: 1;
+    /* border: 1px solid yellow; */
+
+    /* animation-delay: 2s; */
+    bottom: 0;
+    left: -25%;
+    position: absolute;
+  
+    z-index:1;
+    
+}
+
+.Tree2 {
+    animation-delay: 2s;
+    z-index: 5;
+}
+
+.Tree3 {
+    animation-delay: 4s;
+    
+}
+
+.Tree4 {
+    animation-delay: 6s;
+    z-index: 5;
+}
+
+
+.trainSvg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color:yellow; */
+    /* border: 1px solid yellow; */
+
+    /* animation: trainMotion .5s infinite; */
+
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    /* position: absolute; */
+    z-index: 3;
+    
+}
+
+.JumbotronText {
+    /* z-index: 6; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    /* text-shadow: 
+    -1px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black; */
+}
+
+  
+.container {
+    position: relative; /* The container must be relatively positioned */
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    border: 1px solid black; /* For visualization purposes */
+}
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red; /* For visualization purposes */
+}
