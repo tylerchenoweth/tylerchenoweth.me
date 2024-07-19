@@ -13,8 +13,283 @@
     /* background-color: #333; */
 }
 
-@media(max-width: 768px) {
-    .mainDiv {
-        width: 95%;
+
+
+
+.elementHover {
+    transition: all 0.3s ease;
+    background: linear-gradient(150deg, #ff7e5f, #feb47b);
+}
+  
+.elementHover:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes example {
+    0% {
+        transform: translateX(-0vw);
     }
+    100% {
+        transform: translateX(120vw);
+    }
+}
+
+@keyframes trainMotion {
+    from { transform: translateY(0); }
+    50% { transform: translateY(-.25vw); }
+    to { transform: translateY(0); }
+}
+
+
+@keyframes mountains {
+    0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+}
+
+
+
+
+
+
+.animationTrail {
+    display: grid;
+    /* justify-content: space-around; */
+
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    /* border: 15px solid rgb(226, 123, 123); */
+
+
+    /* background: linear-gradient(150deg, #ff7e5f, #feb47b); */
+
+    /* background: linear-gradient(330deg, #4990ff, #010180); */
+    background-color: #010180;
+
+    /* background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 80%,
+        rgba(255, 255, 255, 0) 100%
+    ); */
+
+    /* mask-image: linear-gradient(to bottom, 
+
+                rgba(0, 0, 0, 1) 97%, 
+                rgba(0, 0, 0,0) 100%); */
+    
+    /* should be 45 rem to correspond with 40s animation */
+    height: 45rem;
+    
+
+   
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+
+    /* border-radius: 5px; */
+
+}
+
+
+
+/* 
+.fadecontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.animationTrail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, black, transparent),
+                linear-gradient(to bottom, transparent, black, transparent);
+
+
+} */
+
+
+
+
+.mountainDiv {
+    /* border: 1px solid yellow; */
+    /*min-width was originally 200% */
+    min-width: 268%;
+    height: 100%;
+    background-image: url('/MountainsBackgroundwMargin.svg');
+    /* background-image: url('/MountainsNumbers-01.svg'); */
+    /* flex: 1; */
+    position: absolute;
+
+    background-repeat: repeat-x;
+
+    animation: mountains 40s linear infinite;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    flex: 1;
+    top: 5;
+
+    
+}
+
+.Tree {
+    animation: example 8s linear infinite;
+
+    min-width: 100px; /* Adjust size based on your needs */
+    /* background-color: lightblue; Adjust color based on your needs */
+  
+    flex: 1;
+    /* border: 1px solid yellow; */
+
+    /* animation-delay: 2s; */
+    bottom: 0;
+    left: -25%;
+    position: absolute;
+  
+    z-index:1;
+    
+}
+
+.Tree2 {
+    animation-delay: 2s;
+    z-index: 5;
+}
+
+.Tree3 {
+    animation-delay: 4s;
+    
+}
+
+.Tree4 {
+    animation-delay: 6s;
+    z-index: 5;
+}
+
+
+.trainSvg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color:yellow; */
+    /* border: 1px solid yellow; */
+
+    /* animation: trainMotion .5s infinite; */
+
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    /* position: absolute; */
+    z-index: 3;
+    
+}
+
+.JumbotronText {
+    /* z-index: 6; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    /* text-shadow: 
+    -1px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black; */
+     /* font-size: 1rem; */
+}
+
+
+
+
+.second-div {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust as needed for content */
+  }
+
+
+
+
+
+  .railroadAnimation {
+    display: grid;
+    /* justify-content: space-around; */
+
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    /* border: 15px solid rgb(226, 123, 123); */
+    /* background: linear-gradient(150deg, #ff7e5f, #feb47b); */
+    /* background: linear-gradient(330deg, #4990ff, #010180); */
+    background-color: #010180;
+    /* background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 80%,
+        rgba(255, 255, 255, 0) 100%
+    ); */
+    mask-image: linear-gradient(to bottom, 
+
+                rgba(0, 0, 0, 1) 30%, 
+                rgba(0, 0, 0,0) 100%);
+    
+    height: 10rem;
+
+   
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+
+    /* border-radius: 5px; */
+
+}
+
+
+
+
+.railroad {
+
+    min-width: 475%;
+    height: 100%;
+    background-image: url('/Untitled-3-01.svg');
+
+    position: absolute;
+
+    /* background-repeat: repeat-x; */
+
+    /* animation: mountains 8s linear infinite; */
+    left: 0;
+    bottom: 0;
+    z-index: 110;
+    flex: 1;
+    top: 5;
+
+
+    /* border: 5px solid orange; */
 }
