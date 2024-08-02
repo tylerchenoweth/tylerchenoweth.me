@@ -73,28 +73,21 @@
     width: 100%;
     overflow: hidden; 
     /* border: 15px solid rgb(226, 123, 123); */
-
-
     /* background: linear-gradient(150deg, #ff7e5f, #feb47b); */
-
-    background: linear-gradient(330deg, #4990ff, #010180);
-    /* background-color: #010180; */
-
+    /* background: linear-gradient(330deg, #4990ff, #010180); */
+    background-color: #010180;
     /* background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 0) 100%
     ); */
-
     /* mask-image: linear-gradient(to bottom, 
 
                 rgba(0, 0, 0, 1) 97%, 
                 rgba(0, 0, 0,0) 100%); */
     
-    /* should be 45 rem to correspond with 40s animation */
     height: 45rem;
-    
 
    
     justify-content: center;
@@ -140,8 +133,7 @@
     /*min-width was originally 200% */
     min-width: 268%;
     height: 100%;
-    /* background-image: url('/MountainsBackgroundwMargin.svg'); */
-    background-image: url('/MountainsBackground.svg');
+    background-image: url('/MountainsBackgroundwMargin.svg');
     /* background-image: url('/MountainsNumbers-01.svg'); */
     /* flex: 1; */
     position: absolute;
@@ -159,9 +151,7 @@
 }
 
 .Tree {
-    /* 8 second animation works with 2 second delays */
-    /* animation: example 8s linear infinite; */
-    animation: example 11s linear infinite;
+    animation: example 8s linear infinite;
 
     min-width: 100px; /* Adjust size based on your needs */
     /* background-color: lightblue; Adjust color based on your needs */
@@ -179,17 +169,17 @@
 }
 
 .Tree2 {
-    animation-delay: 3s;
+    animation-delay: 2s;
     z-index: 5;
 }
 
 .Tree3 {
-    animation-delay: 6s;
+    animation-delay: 4s;
     
 }
 
 .Tree4 {
-    animation-delay: 9s;
+    animation-delay: 6s;
     z-index: 5;
 }
 
@@ -214,9 +204,8 @@
 .JumbotronText {
     /* z-index: 6; */
     /* display: flex; */
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
-    text-align: center;
     position: relative;
     /* text-shadow: 
     -1px -1px 0 black, 
@@ -249,21 +238,19 @@
     /* border: 15px solid rgb(226, 123, 123); */
     /* background: linear-gradient(150deg, #ff7e5f, #feb47b); */
     /* background: linear-gradient(330deg, #4990ff, #010180); */
-
-    /* background-color: #010180; */
-
+    background-color: #010180;
     /* background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 0) 100%
     ); */
-    /* mask-image: linear-gradient(to bottom, 
+    mask-image: linear-gradient(to bottom, 
 
-                rgba(0, 0, 0, 1) 30%, 
-                rgba(0, 0, 0,0) 100%); */
+                rgba(0, 0, 0, 1) 40%, 
+                rgba(0, 0, 0,0) 100%);
     
-    height: 20rem;
+    height: 15rem;
 
    
     justify-content: center;
@@ -280,22 +267,23 @@
 
 
 .railroad {
-
-    min-width: 377%;
+    /* border: 1px solid yellow; */
+    /*min-width was originally 200% */
+    min-width: 360%;
     height: 100%;
-    background-image: url('/Untitled-11-01.svg');
-
+    background-image: url('/TrainBridgeNum-05.svg');
+    /* background-image: url('/MountainsNumbers-01.svg'); */
+    /* flex: 1; */
     position: absolute;
 
-    background-repeat: repeat-x;
+    /* background-repeat: repeat-x; */
 
-    animation: mountains 19s linear infinite;
+    animation: mountains 8s linear infinite;
     left: 0;
     bottom: 0;
-    z-index: 110;
+    z-index: 0;
     flex: 1;
     top: 5;
-
 
     /* border: 5px solid orange; */
 }

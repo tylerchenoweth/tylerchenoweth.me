@@ -1,11 +1,12 @@
+'use client';
+
 import Image from "next/image";
-import Link from 'next/link'
+import Link from 'next/link';
 
-
+// import styles from "page.module.css";
 
 import styles from "./page.module.css";
 
-import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
 
@@ -14,18 +15,20 @@ import
   from "@/components/Cooper";
 // import CooperSvgBlack from "@/components/Cooper";
 
+ 
+
+import topSvgBackground from '../../../public/MountainsBackgroundwMargin.svg';
+import bottomSvgBackground from '../../../public/TrackBridgeNum.svg';
+import alignedSvg from '../../../public/TrainSvgBlackFill.svg';
+
+
 export default function Home() {
 
 
 
-  return (
 
-    
-    // This basically works
-    <div >
-      
-      <Navbar/>
-      <div>
+    return (
+        <div>
             <div className={`${styles.animationTrail} ${styles.fadecontent}` }>
                         <div className={styles.JumbotronText}>
                             <h1>Hi, Im Tyler Chenoweth</h1>
@@ -68,7 +71,7 @@ export default function Home() {
 
         
                         <div className={styles.trainSvg}>
-                            <img src="./TrainwTender.svg" width={700} height={200} />
+                            <img src="./TrainSvgBlackFill.svg" width={500} height={200} />
                         </div>
                         <div className={styles.mountainDiv}>
                             {/* <img src="./MountainsBackground.svg" width={500} height={200} /> */}
@@ -86,28 +89,6 @@ export default function Home() {
             </div>
 
         </div>
-      <div className={styles.mainDiv}>
-
-      
-        <hr></hr>
-        
-        <About/>
-        <Skills/>
-        <hr></hr>
-        
-        {/* <CooperSVG />
-        <CooperNewDesign />
-
-        <CooperSvgParameters CooperStyle="Outline" />
-        <CooperSvgParameters CooperStyle="OutlineWhiskers" />
-        <CooperSvgParameters CooperStyle="Filled" />
-        <CooperSvgParameters CooperStyle="FilledWhiskers" /> */}
     
-        
-        <p>hey! down here!</p>
-        <br></br><br></br><br></br><br></br>
-      </div>
-    </div>
-    
-  );
+    );
 }
