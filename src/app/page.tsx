@@ -68,7 +68,7 @@ export default function Home() {
 
         
                         <div className={styles.trainSvg}>
-                            <img src="./TrainSvgBlackFill.svg" width={500} height={200} />
+                            <img src="./TrainwTender.svg" width={700} height={200} />
                         </div>
                         <div className={styles.mountainDiv}>
                             {/* <img src="./MountainsBackground.svg" width={500} height={200} /> */}
