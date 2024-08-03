@@ -161,7 +161,7 @@
 .Tree {
     /* 8 second animation works with 2 second delays */
     /* animation: example 8s linear infinite; */
-    animation: example 11s linear infinite;
+    animation: example 12s linear infinite;
 
     min-width: 100px; /* Adjust size based on your needs */
     /* background-color: lightblue; Adjust color based on your needs */
