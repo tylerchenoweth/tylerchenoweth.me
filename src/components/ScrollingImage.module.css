@@ -13,17 +13,17 @@
     width: auto; /* Ensure the width of the SVG adjusts according to its aspect ratio */
     flex-shrink: 0; /* Prevent the image from shrinking */
     animation: scroll 5s linear infinite; /* Animation duration */
-    display: block;
-    margin-left: -1%;
+    /* display: block; */
+    /* margin-left: -1%; */
     border-radius: 0;
   }
   
   @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(-100.5%);
     }
     100% {
-        transform: translateX(-100%); /* Move left by the width of one SVG */
+        transform: translateX(0); /* Move left by the width of one SVG */
     }
   }
   
