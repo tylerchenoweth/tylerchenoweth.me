@@ -15,6 +15,7 @@
     animation: scroll 5s linear infinite; /* Animation duration */
     display: block;
     margin-left: -1%;
+    border-radius: 0;
   }
   
   @keyframes scroll {
