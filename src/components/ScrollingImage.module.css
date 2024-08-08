@@ -5,6 +5,7 @@
     overflow: hidden;
     height: 80vh; /* Specify your desired height */
     position: relative;
+    width: 200%;
   }
   
   .scrollingImage {
@@ -12,6 +13,8 @@
     width: auto; /* Ensure the width of the SVG adjusts according to its aspect ratio */
     flex-shrink: 0; /* Prevent the image from shrinking */
     animation: scroll 5s linear infinite; /* Animation duration */
+    display: block;
+    margin-left: -1%;
   }
   
   @keyframes scroll {
