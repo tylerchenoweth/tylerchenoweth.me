@@ -1,13 +1,14 @@
-// pages/index.js
+// pages/page.tsx
+
+import React from 'react';
 import ScrollingImage from '../../components/ScrollingImage';
 
-const Home = () => {
-  return (
-    <main>
-      <ScrollingImage />
-      
-    </main>
-  );
+const Page = () => {
+    return (
+        <div>
+            <ScrollingImage />
+        </div>
+    );
 };
 
-export default Home;
+export default Page;
