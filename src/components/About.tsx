@@ -17,7 +17,7 @@ export default function About() {
                     <p>Just pay me to build cool shit and dont ask any questions</p>
                 </div>
                 <div className={styles.linkWrapper}>
-                    <Link className={styles.resumeLink} href="/Tyler_Chenoweth_Resume_July_2024.pdf">
+                    <Link className={styles.resumeLink} href="/Tyler_Chenoweth_Resume_August_2024.pdf">
                         <h1>View Resume</h1>
                     </Link>
                 </div>
