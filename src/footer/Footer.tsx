@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <hr></hr>
-            <p> &copy; 2024 Tyler Chenoweth</p>
+            <p> &copy; 2025 Tyler Chenoweth</p>
         </footer>
     )
 }
