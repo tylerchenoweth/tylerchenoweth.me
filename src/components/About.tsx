@@ -14,7 +14,7 @@ export default function About() {
                 <div className={styles.detailsInnerDiv}>
                     <h1>About</h1>
                     <hr></hr>
-                    <p>Just pay me to build cool shit and dont ask any questions</p>
+                    <p>Just pay me to build cool stuff and dont expect me at any meetings</p>
                 </div>
                 <div className={styles.linkWrapper}>
                     <Link className={styles.resumeLink} href="/Current_Resume.pdf">
