@@ -15,7 +15,7 @@ export default function About() {
                     <h1>About</h1>
                     <hr></hr>
                     <p>Just pay me to build cool stuff and dont expect me at any meetings</p>
-                    <p>P.S. No, I will not work with office 365</p>
+                    <p>P.S. I work better when I'm not fighting office 365</p>
                 </div>
                 <div className={styles.linkWrapper}>
                     <Link className={styles.resumeLink} href="/Current_Resume.pdf">
